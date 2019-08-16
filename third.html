@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+    $(function(){
+        $("#p1").click(function(){
+            $(this).toggle();
+
+        });
+
+
+    });
+    </script>
+
 </head>
 <body>
-    <h1>Third</h1>
+    <ul class="list">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>
+            <ul class="sublist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+
+        </li>
+    </ul>
 </body>
 </html>
