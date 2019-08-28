@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .row{
+            margin-bottom: 20px;
+        }
+        .row .row{
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        [class*="col-"]{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #eee;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid #ddd;
+            border: 1px solid rgba(86, 61, 124, .2);
+
+        }
+    </style>
+    <link rel="stylesheet" href="./lib/bootstrap/bootstrap.css">
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./lib/vue.js"></script>
+   <script src="./lib/bootstrap/bootstrap.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+        <div class="row">
+                <div class="col-md-3">col-md-3</div>
+                <div class="col-md-3">col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3</div>
+                <div class="col-md-3">col-md-3</div>
+                <div class="col-md-3">col-md-3</div>
+        </div>
+        <div class="row">
+                <!-- col-md-offset-5偏移量，偏移了5个 -->
+                <div class="col-md-3 col-md-offset-5">col-md-3</div>
+        </div>
+
+        <!-- 嵌套 -->
+        <div class="row">
+            <div class="col-sm-6">
+                one
+                <div class="row">
+                    <div class="col-xs-6">
+                            first
+                    </div>
+
+                    <div class="col-xs-4">
+                            two
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 列的排序 左右交换了位置 -->
+        <div class="row">
+            <div class="col-md-8 col-md-push-4">col-md-8</div>
+            <div class="col-md-4 col-md-pull-8">col-md-4</div>
+        </div>
+    </div>
+</body>
+</html>
