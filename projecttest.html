@@ -37,11 +37,11 @@
                 <input type="button" value="添加" class="btn btn-primary" @click="add">
 
                 <label>
-                        搜索名称关键字:
-                        <input type="text" class="form-control" v-model="keyword">
-    
-                    </label>
-                    
+                    搜索名称关键字:
+                    <input type="text" class="form-control" v-model="keyword">
+
+                </label>
+
             </div>
 
         </div>
@@ -77,7 +77,7 @@
             data: {
                 id: "",
                 name: "",
-                keyword:"",
+                keyword: "",
                 datalist: [
                     { id: 1, name: "大众", ctime: new Date() },
                     { id: 2, name: "奔驰", ctime: new Date() },
@@ -94,7 +94,7 @@
                     this.datalist.push(car)
                     this.id = this.name = ""
                 },
-                delect:function(id){
+                delect: function (id) {
                     //方法1
                     // this.datalist.some((item,i) => {
                     //     if (item.id == id){
@@ -104,20 +104,20 @@
 
                     // })
                     //方法2
-                    var index =  this.datalist.findIndex(item => {
-                        if (item.id == id){
+                    var index = this.datalist.findIndex(item => {
+                        if (item.id == id) {
 
                             return true;
                         }
                     })
-                    
-                    this.datalist.splice(index,1)
-                },
-                search:function(keyword){
-                    
-                    return this.datalist.filter( item => {
 
-                        if (item.name.includes(keyword)){
+                    this.datalist.splice(index, 1)
+                },
+                search: function (keyword) {
+
+                    return this.datalist.filter(item => {
+
+                        if (item.name.includes(keyword)) {
 
                             return item
                         }
